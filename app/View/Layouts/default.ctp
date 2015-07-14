@@ -20,6 +20,7 @@
                 echo $this->Html->script('tms_presets');
                 echo $this->Html->script('jquery.easing.1.3');
                 echo $this->Html->script('jquery.equalheights');
+                echo $this->Html->script('navibar');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
@@ -35,13 +36,14 @@
                 	<h1><?php echo $this->Html->link("Nhahanghoasen<span>.vn</span>",array('controller' => 'pages', 'action' => 'display', 'home'),array('escape'=>false));?></h1>
                     <nav style="font-size: 29px;">
                         <ul class="menu" >
-                            <li> <?php echo $this->Html->link('Thực đơn',array('controller'=>'menus'),array());?></li>
-                            <li> <?php echo $this->Html->link('Món ăn',array('controller'=>'foods','action'=>'index'),array());?></li>
-                            <li> <?php echo $this->Html->link('Món ăn trong ngày',array('controller'=>'foods','action'=>'mon_an_trong_ngay'),array());?></li>
-                            <li> <?php echo $this->Html->link('Món ăn theo mùa',array('controller'=>'foods','action'=>'mon_an_theo_mua'),array());?></li>
-                            <li> <?php echo $this->Html->link('Tìm kiếm',array('controller'=>'searchs'),array());?></li>
-                            <li> <?php echo $this->Html->link('Tin tức',array('controller'=>'news'),array());?></li>
-                            <li> <?php echo $this->Html->link('Giỏ hàng',array('controller'=>'shoppingcarts'),array());?></li>
+                            <li> <?php echo $this->Html->link('Thực đơn',array('controller'=>'menus'),array("id"=>"a1"));?></li>
+                            <li> <?php echo $this->Html->link('Món ăn',array('controller'=>'foods','action'=>'index'),array("id"=>"a2"));?></li>
+                            <li> <?php echo $this->Html->link('Món ăn trong ngày',array('controller'=>'foods','action'=>'mon_an_trong_ngay'),array("id"=>"a3"));?></li>
+                            <li> <?php echo $this->Html->link('Món ăn theo mùa',array('controller'=>'foods','action'=>'mon_an_theo_mua'),array("id"=>"a4"));?></li>
+                            <li> <?php echo $this->Html->link('Tìm kiếm',array('controller'=>'searchs'),array("id"=>"a5"));?></li>
+                            <li> <?php echo $this->Html->link('Tin tức',array('controller'=>'news'),array("id"=>"a6"));?></li>
+                            <li> <?php echo $this->Html->link('Giỏ hàng',array('controller'=>'shoppingcarts'),array("id"=>"a7"));?></li>
+                        
                         </ul>
                     </nav>
                 </div>
