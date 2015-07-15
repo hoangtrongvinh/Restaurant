@@ -9,7 +9,7 @@ body {font-family:Arial, Helvetica, sans-serif;font-size:100%; color:#7f7f7f;min
 .bg {width:100%; background:url(../images/bg-top.jpg) center 0 no-repeat;}
 
 .main {
-	width:960px; 	
+	width:1110px; 	
 	padding:0;
 	margin:0 auto;
 	font-size:13px;
@@ -25,7 +25,7 @@ a {color:#7f7f7f; outline:none;}
 a:hover {text-decoration:none;}
 
 .col-1, .col-2,
-.column-1, .column-2 {float:left;}
+.column-1, .column-2 {float:left; margin-left: 37px;}
 
 .wrapper {width:100%; overflow:hidden;}
 .extra-wrap {overflow:hidden;}
@@ -97,7 +97,7 @@ header {
 
 .row-top {
 	width:100%;
-	padding:10px 0;
+	padding: 6px 0px 29px;
 	background: #006B1C;
 }
 
@@ -106,13 +106,15 @@ h1 {
 	float:left;
 }
 	h1 a {
-		display:inline-block;
-		font-size:50px;
-		font-weight:normal;
-		line-height:1.4em;
-		color:#fff;
-		letter-spacing:-3px;
-		margin-top:-10px;
+            display: inline-block;
+            font-size: 50px;
+            font-weight: normal;
+            line-height: 1.4em;
+            color: #FFF;
+            letter-spacing: -3px;
+            margin-top: 0px;
+            position: relative;
+            top: -16px;
 	}
 		h1 a span {color:#c52e02}
 		
@@ -132,8 +134,10 @@ h2 {
 	float:right;
 }
 .menu li {
-	float:left;
-	padding-left:40px;
+	float: left;
+        padding-left: 53px;
+        position: relative;
+        top: 28px;
 }
 .menu li a { 
 	font-size:14px; 

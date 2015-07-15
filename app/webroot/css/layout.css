@@ -26,3 +26,23 @@
 #page6 #content {padding:25px 0 42px;}
 #page6 .col-1 {width:290px; margin-right:50px;}
 #page6 .col-2 {width:610px;}
+
+.breadcrumb {
+	padding: 8px 15px;
+	margin-bottom: 20px;
+	list-style: outside none none;
+	background-color: #C6C0C0;
+	border-radius: 4px;
+}
+.row {
+	margin-right: -15px;
+	margin-left: -15px;
+	margin-top: 38px;
+	clear: both;
+}
+.spc {
+	margin-bottom: 51px;
+}
+.container {
+	width: 1075px;
+}

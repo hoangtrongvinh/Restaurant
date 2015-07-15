@@ -14,7 +14,7 @@ App::uses('AppController', 'Controller');
  */
 class ContactsController extends AppController {
 
-    public function index($id) {
+    public function index() {
         
     }
 

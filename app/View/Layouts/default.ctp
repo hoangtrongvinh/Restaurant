@@ -6,6 +6,7 @@
 		<?php echo $this->fetch('title'); ?>
 	</title>
 	<?php
+                echo $this->fetch('addcss');
                 echo $this->Html->meta('icon');
 		echo $this->Html->css('reset');
                 echo $this->Html->css('style');
@@ -38,17 +39,17 @@
                         <ul class="menu" >
                             <li> <?php echo $this->Html->link('Thực đơn',array('controller'=>'menus'),array("id"=>"a1"));?></li>
                             <li> <?php echo $this->Html->link('Món ăn',array('controller'=>'foods','action'=>'index'),array("id"=>"a2"));?></li>
-                            <li> <?php echo $this->Html->link('Món ăn trong ngày',array('controller'=>'foods','action'=>'mon_an_trong_ngay'),array("id"=>"a3"));?></li>
-                            <li> <?php echo $this->Html->link('Món ăn theo mùa',array('controller'=>'foods','action'=>'mon_an_theo_mua'),array("id"=>"a4"));?></li>
-                            <li> <?php echo $this->Html->link('Tìm kiếm',array('controller'=>'searchs'),array("id"=>"a5"));?></li>
+                            <li> <?php echo $this->Html->link('Món ăn trong ngày',array('controller'=>'foods','action'=>'trong_ngay'),array("id"=>"a3"));?></li>
+                            <li> <?php echo $this->Html->link('Món ăn theo mùa',array('controller'=>'foods','action'=>'theo_mua'),array("id"=>"a4"));?></li>
+                            <li> <?php echo $this->Html->link('Liên hệ',array('controller'=>'contacts'),array("id"=>"a5"));?></li>
                             <li> <?php echo $this->Html->link('Tin tức',array('controller'=>'news'),array("id"=>"a6"));?></li>
-                            <li> <?php echo $this->Html->link('Giỏ hàng',array('controller'=>'shoppingcarts'),array("id"=>"a7"));?></li>
+                            <li> <?php echo $this->Html->link('Giỏ hàng',array('controller'=>'shoppingcarts','action'=>'index'),array("id"=>"a7"));?></li>
                         
                         </ul>
                     </nav>
                 </div>
             </div>
-            <div style="display:inline; float:right; position:relative; top: -96px; right: 6px;" >
+            <div style="display: inline;float: right;position: relative;top: 34px; right: 6px;" >
                 <input name="search" id="text-search" autocomplete="off" type="text">                    
                 <button id="button-search"  type="submit">Search</button>                    &nbsp;
                     <span id="cartbutton" style="display:none;">
@@ -56,7 +57,15 @@
                     </span>
             </div>  
         </div>
-      <?php echo $this->fetch('slide'); ?>
+        <div class="row-bot">
+        	<div class="row-bot-bg">
+            	<div class="main">
+                	<h2>Impressive Selection <span>for any Occasion</span></h2>
+                              <?php echo $this->fetch('slide'); ?>
+                </div>
+            </div>
+        </div>
+
     </header>
     
 	<!--==============================content================================-->

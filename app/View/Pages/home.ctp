@@ -1,12 +1,7 @@
 <?php
 $this->assign('title', 'Home');
 $this->assign('page', 'page1');
-$this->start('slide');
-?>
-        <div class="row-bot">
-        	<div class="row-bot-bg">
-            	<div class="main">
-                	<h2>Impressive Selection <span>for any Occasion</span></h2>
+$this->start('slide');?>
                     <div class="slider-wrapper">
                         <div class="slider">
                             <ul class="items">
@@ -22,9 +17,6 @@ $this->start('slide');
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
 <?php $this->end(); ?>
             <div class="wrapper img-indent-bot">
                 <article class="col-1">

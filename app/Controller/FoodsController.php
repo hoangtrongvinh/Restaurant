@@ -13,15 +13,19 @@ App::uses('AppController', 'Controller');
  * @author Hoang Vinh
  */
 class FoodsController extends AppController {
+    public function beforeFilter() 
+    {
+        parent::beforeFilter();
+    }
 
     public function index() {
         
     }
-    public function mon_an_trong_ngay()
+    public function trong_ngay()
     {
         
     }
-    public function mon_an_theo_mua()
+    public function theo_mua()
     {
         
     }

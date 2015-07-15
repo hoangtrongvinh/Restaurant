@@ -32,17 +32,18 @@
         
         Router::connect('/food', array('controller' => 'foods', 'action' => 'index'));
         
-        Router::connect('/food/trong_ngay', array('controller' => 'foods', 'action' => 'mon_an_trong_ngay'));
+        Router::connect('/food/trong_ngay', array('controller' => 'foods', 'action' => 'trong_ngay')); 
         
-        
-        Router::connect('/food/theo_mua', array('controller' => 'foods', 'action' => 'mon_an_theo_mua'));
+        Router::connect('/food/theo_mua', array('controller' => 'foods', 'action' => 'theo_mua'));
         
         Router::connect('/search', array('controller' => 'searchs', 'action' => 'index'));
         
         Router::connect('/contact', array('controller' => 'contacts', 'action' => 'index'));
         
+        
         Router::connect('/new', array('controller' => 'news', 'action' => 'index'));
         
+        Router::connect('/shoppingcart', array('controller' => 'shoppingcarts', 'action' => 'index'));
 /**
  * Load all plugin routes. See the CakePlugin documentation on
  * how to customize the loading of plugin routes.
