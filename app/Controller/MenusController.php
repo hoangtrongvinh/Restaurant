@@ -13,18 +13,15 @@ class MenusController extends AppController {
  * Components
  *
  * @var array
- */
-	public $components = array('Paginator', 'Session');
+ */     public $helpers = array('Html', 'Form', 'Session');
+        public $components= array('Session');
 
 /**
  * index method
  *
  * @return void
  */
-	public function index() {
-		$this->Menu->recursive = 0;
-		$this->set('menus', $this->Paginator->paginate());
-                
+	public function index() {    
 	}
 
 /**
