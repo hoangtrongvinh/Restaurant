@@ -24,7 +24,11 @@
  * its action called 'display', and we pass a param to select the view file
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
+        Router::parseExtensions('html', 'rss');
 	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+        
+        Router::connect('/about', array('controller' => 'pages', 'action' => 'about'));
+        Router::connect('/service', array('controller' => 'pages', 'action' => 'service'));
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */

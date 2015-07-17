@@ -63,7 +63,7 @@
     </header>
     
 	<!--==============================content================================-->
-    <section id="content"><div class="ic">More Website Templates @ TemplateMonster.com - January 23, 2012!</div>
+        <section id="content" style="<?php echo $this->fetch('StyleContent'); ?>"><div class="ic">More Website Templates @ TemplateMonster.com - January 23, 2012!</div>
         <div class="main">
       <?php echo $this->fetch('content');?>
         </div>

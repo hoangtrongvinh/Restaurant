@@ -73,4 +73,12 @@ class PagesController extends AppController {
 			throw new NotFoundException();
 		}
 	}
+        public function about()
+        {
+            
+        }
+        public function service()
+        {
+            
+        }
 }
