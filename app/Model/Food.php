@@ -32,13 +32,6 @@ class Food extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
-		'MenuFood' => array(
-			'className' => 'MenuFood',
-			'foreignKey' => 'food_type_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		)
 	);
 
 /**
@@ -59,6 +52,13 @@ class Food extends AppModel {
 			'exclusive' => '',
 			'finderQuery' => '',
 			'counterQuery' => ''
+		),
+            	'MenuFood' => array(
+			'className' => 'MenuFood',
+			'foreignKey' => 'food_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
 		)
 	);
 
