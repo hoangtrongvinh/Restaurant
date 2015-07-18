@@ -29,5 +29,11 @@ $this->start('javascript1');
                     <?php } ?>
 </div>
 <div style="clear: both;"></div>
+<br />
+<div>
+<?php echo $this->element('pagination-counter'); ?>
+
+<?php echo $this->element('pagination'); ?>
+</div>
 </div
 </div>

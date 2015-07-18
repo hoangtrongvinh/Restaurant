@@ -17,18 +17,26 @@ class FoodsController extends AppController {
      * @var array
      */
     public $components = array('Paginator', 'Session');
-    public $paginate = array(
-        'limit' => 8,
-        'order' => array(
-            'Food.name' => 'asc'
-        )
-    );
 
     public function index() {
         //$this->Food->recursive = -1;
         //$this->set('foods', $this->Paginator->paginate());
          //$this->Food->unbindModel(array('belongsTo' => array('MenuFood')));
-        $this->set('foods',$this->Food->find('all',array('recursive' => 0)));
+        //$this->set('foods',$this->Food->find('all',array('recursive' => 0)));
+$this->Paginator = $this->Components->load('Paginator');
+
+        $this->Paginator->settings = array(
+            'Product' => array(
+                'recursive' => 0,
+                'limit' => 8,
+                'order' => array(
+                    'Food.name' => 'ASC'
+                ),
+                'paramType' => 'querystring',
+            )
+        );
+        $foods = $this->Paginator->paginate();
+        $this->set(compact('foods'));
        
     }
 
