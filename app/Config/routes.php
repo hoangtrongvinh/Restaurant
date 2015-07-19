@@ -34,7 +34,14 @@
  */
 	Router::connect('/menu', array('controller' => 'menus', 'action' => 'index'));
         
+        Router::connect('/menu/:id', array('controller' => 'menus', 'action' => 'thuc_don'),array('pass' => array('id'),
+        'id' => '[0-9]+'));
+        
+        
         Router::connect('/food', array('controller' => 'foods', 'action' => 'index'));
+        
+        Router::connect('/food/cung_loai/:type/:id', array('controller' => 'foods', 'action' => 'cung_loai'),array('pass' => array( 'type','id'),
+        'id' => '[0-9]+','type' => '[0-9]+'));
         
         Router::connect('/food/trong_ngay', array('controller' => 'foods', 'action' => 'trong_ngay')); 
         

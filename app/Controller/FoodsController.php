@@ -21,12 +21,12 @@ class FoodsController extends AppController {
     public function index() {
         //$this->Food->recursive = -1;
         //$this->set('foods', $this->Paginator->paginate());
-         //$this->Food->unbindModel(array('belongsTo' => array('MenuFood')));
+        //$this->Food->unbindModel(array('belongsTo' => array('MenuFood')));
         //$this->set('foods',$this->Food->find('all',array('recursive' => 0)));
-$this->Paginator = $this->Components->load('Paginator');
+        $this->Paginator = $this->Components->load('Paginator');
 
         $this->Paginator->settings = array(
-            'Product' => array(
+            'Food' => array(
                 'recursive' => 0,
                 'limit' => 8,
                 'order' => array(
@@ -35,9 +35,27 @@ $this->Paginator = $this->Components->load('Paginator');
                 'paramType' => 'querystring',
             )
         );
+        $foods = $this->Paginator->paginate('Food');
+        $this->set(compact('foods'));
+    }
+    
+    public function trong_ngay()
+    {
+        $this->Paginator = $this->Components->load('Paginator');
+
+        $this->Paginator->settings = array(
+            'Food' => array(
+                'recursive' => 0,
+                'limit' => 8,
+                'conditions'=> array('Food.in_day'=>1),
+                'order' => array(
+                    'Food.name' => 'ASC'
+                ),
+                'paramType' => 'querystring',
+            )
+        );
         $foods = $this->Paginator->paginate();
         $this->set(compact('foods'));
-       
     }
 
     /**
@@ -47,12 +65,30 @@ $this->Paginator = $this->Components->load('Paginator');
      * @param string $id
      * @return void
      */
-    public function view($id = null) {
-        if (!$this->Food->exists($id)) {
-            throw new NotFoundException(__('Invalid food'));
+    public function cung_loai($type = null, $id = null) {
+        $this->Food->id = $id;
+        if (!$this->Food->exists()) {
+            throw new NotFoundException(__('Invalid food id'));
         }
-        $options = array('conditions' => array('Food.' . $this->Food->primaryKey => $id));
-        $this->set('food', $this->Food->find('first', $options));
+        $this->Paginator->settings = array(
+            'Food' => array(
+                'recursive' => 0,
+                'limit' => 8,
+                'conditions' => array('Food.food_type_id' => $type,'Food.id !='=>$id),
+                'order' => array(
+                    'Food.name' => 'ASC'
+                ),
+                'paramType' => 'querystring',
+            )
+        );
+        $foods = $this->Paginator->paginate();
+        $this->set(compact('foods'));
+         $chi_tiet = $this->Food->find('first', array(
+        'conditions' => array('Food.id' => $id)
+    ));
+        $this->set('id', $id);
+        $this->set('type', $type);
+        $this->set('chi_tiet', $chi_tiet);
     }
 
     /**

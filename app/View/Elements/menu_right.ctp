@@ -1,33 +1,25 @@
 <article class="col-2">
-                	<h3>Price List</h3>
-                    <ul class="price-list p2">
-                      <li><span>$12.95</span><a href="#">Nam liber tempor cum soluta nobis eleifend</a></li>
-                      <li><span>$9.50</span><a href="#">Option congue nihil imperdiet doming id quod mazim</a></li>
-                      <li><span>$13.90</span><a href="#">Placerat facer possim assum</a></li>
-                      <li><span>$20.15</span><a href="#">Lorem ipsum dolor sit amet, consectetuer</a></li>
-                      <li><span>$15.05</span><a href="#">Adipiscing elit, sed diam nonummy nibh euismod tincidunt</a></li>
-                      <li><span>$12.95</span><a href="#">Laoreet dolore magna aliquam erat volutpat</a></li>
-                      <li><span>$14.75</span><a href="#">Ut wisi enim ad minim veniam, quis nostrud exerci</a></li>
-                      <li><span>$08.85</span><a href="#">Tation ullamcorper suscipit lobortis nisl</a></li>
-                      <li><span>$12.95</span><a href="#">Aliquip ex ea commodo consequat</a></li>
-                      <li><span>$21.00</span><a href="#">Ut wisi enim ad minim veniam, quis nostrud exerci</a></li>
-                      <li><span>$12.95</span><a href="#">Tation ullamcorper suscipit lobortis nisl ut aliquip ex ea</a></li>
-                      <li><span>$13.35</span><a href="#">Duis autem vel eum iriure dolor in hendrerit</a></li>
-                      <li><span>$12.95</span><a href="#">Vulputate velit esse molestie consequat vel illum dolore</a></li>
-                      <li><span>$12.95</span><a href="#">Feugiat nulla facilisis at vero eros et accumsan</a></li>
-                      <li><span>$12.95</span><a href="#">Iusto odio dignissim qui blandit praesent luptatum</a></li>
-                      <li><span>$18.75</span><a href="#">Azril delenit augue duis dolore te feugait nulla facilisi</a></li>
-                      <li><span>$12.95</span><a href="#">Nam liber tempor cum soluta nobis eleifend option congue</a></li>
-                      <li><span>$17.85</span><a href="#">Hihil imperdiet doming id quod mazim placerat</a></li>
-                      <li><span>$12.95</span><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing</a></li>
-                      <li><span>$22.35</span><a href="#">Sed diam nonummy nibh euismod tincidunt</a></li>
-                      <li><span>$12.95</span><a href="#">Laoreet dolore magna aliquam erat volutpat</a></li>
-                      <li><span>$09.25</span><a href="#">Ut wisi enim ad minim veniam, quis nostrud exerci</a></li>
-                      <li><span>$12.95</span><a href="#">Tation ullamcorper suscipit lobortis nisl</a></li>
-                      <li><span>$17.15</span><a href="#">Nam liber tempor cum soluta nobis eleifend</a></li>
-                      <li><span>$12.95</span><a href="#">Option congue nihil imperdiet doming id quod mazim</a></li>
-                      <li><span>$19.05</span><a href="#">Placerat facer possim assum</a></li>
-                    </ul>
-                    <a class="button-2" href="#">Read More</a>
-                </article>
+      <h3>Chi tiết thực đơn</h3>
+      <ul>
+        <?php foreach( $ds_mon_an as $food){?>
+        <li>
+        <img src="/images/hinh_mon_an/<?php echo $food['Food']['image'] ?> " alt="" width="210px" height="125px" align="right" style="float:right;">
+        <h5 class="prev-indent-bot"><?php echo $food['Food']['name'] ?> </h5>
+        <div style="height:87px; overflow:hidden;"><?php
+                    echo $this->Text->truncate(
+                            $food['Food']['excerpt'], 80, array(
+                        'ellipsis' => '...',
+                        'exact' => false
+                            )
+                    );
+                    ?></div>
+                <?php echo $this->Html->link('Chi tiết', array('controller' => 'foods',
+        'action' => 'cung_loai','type' => $food['Food']['food_type_id'],
+        'id' => $food['Food']['id'],'ext' => 'html'), array('class' => 'button-2'));
+        ?> 
+        </li>
+        <?php } ?>
+      </ul>
+      </article>
+  </div>
 </div>
