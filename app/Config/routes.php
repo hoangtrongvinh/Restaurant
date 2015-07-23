@@ -40,8 +40,7 @@
         
         Router::connect('/food', array('controller' => 'foods', 'action' => 'index'));
         
-        Router::connect('/food/cung_loai/:type/:id', array('controller' => 'foods', 'action' => 'cung_loai'),array('pass' => array( 'type','id'),
-        'id' => '[0-9]+','type' => '[0-9]+'));
+        Router::connect('/food/cung_loai/:type/:id', array('controller' => 'foods', 'action' => 'cung_loai'),array('pass' => array( 'type','id')));
         
         Router::connect('/food/trong_ngay', array('controller' => 'foods', 'action' => 'trong_ngay')); 
         
@@ -54,7 +53,7 @@
         
         Router::connect('/new', array('controller' => 'news', 'action' => 'index'));
         
-        Router::connect('/shoppingcart', array('controller' => 'shoppingcarts', 'action' => 'index'));
+        Router::connect('/cart', array('controller' => 'carts', 'action' => 'view'));
 /**
  * Load all plugin routes. See the CakePlugin documentation on
  * how to customize the loading of plugin routes.

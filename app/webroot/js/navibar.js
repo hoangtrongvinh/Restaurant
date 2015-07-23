@@ -19,7 +19,7 @@ $(document).ready(function(){
     if(document.URL.indexOf("contact") != -1) {
         $("#a5").addClass("active");
 }
-if(document.URL.indexOf("shoppingcart") != -1) {
+if(document.URL.indexOf("cart") != -1) {
         $("#a7").addClass("active");
 }
 });

@@ -34,7 +34,11 @@ $this->start('javascript1');
                     );
                     ?></p>
                 <p class="p2"><strong class="color-2">Price: <?php echo $this->Number->currency($food['Food']['price'], 'USD'); ?></strong></p>
-                <a class="button-1" href="#">Add to Cart</a>
+                        <?php echo $this->Form->create('Cart',array('class'=>'add-form','url'=>array('controller'=>'carts','action'=>'add')));?>
+			<?php echo $this->Form->hidden('product_id',array('value'=>$food['Food']['id']))?>
+                        <?php echo $this->Form->hidden('SL',array('value'=>1,'type'=>'number','style'=>'height: 43px; width: 67px;','label'=>false,'div' => false))?>
+			<?php echo $this->Form->submit('Add to Cart',array('class'=>'btn-success btn btn-lg','style'=>'display: inline;','div' => false));?>
+			<?php echo $this->Form->end();?>
             </div>
         </div>
 <?php } ?>
@@ -51,3 +55,16 @@ $this->start('javascript1');
 
 </div
 </div>
+<script>
+$(document).ready(function(){
+	$('.add-form').submit(function(e){
+		e.preventDefault();
+		var tis = $(this);
+		$.post(tis.attr('action'),tis.serialize(),function(data){
+			$('#cart-counter').text(data);
+                        $('#msg').html('<div class="alert alert-success flash-msg">Product Added to Shopping Cart</div>');
+			$('.flash-msg').delay(2000).fadeOut('slow');
+		});
+	});
+});
+</script>

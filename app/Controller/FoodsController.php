@@ -16,7 +16,7 @@ class FoodsController extends AppController {
      *
      * @var array
      */
-    public $components = array('Paginator', 'Session');
+    public $components = ['Paginator', 'Session'];
 
     public function index() {
         //$this->Food->recursive = -1;
@@ -68,7 +68,9 @@ class FoodsController extends AppController {
     public function cung_loai($type = null, $id = null) {
         $this->Food->id = $id;
         if (!$this->Food->exists()) {
-            throw new NotFoundException(__('Invalid food id'));
+            $this->Flash->set('Đừng có chọc ngoáy URL');
+            return $this->redirect(array('action' => 'index'), 301);
+            
         }
         $this->Paginator->settings = array(
             'Food' => array(
@@ -81,7 +83,7 @@ class FoodsController extends AppController {
                 'paramType' => 'querystring',
             )
         );
-        $foods = $this->Paginator->paginate();
+        $foods = $this->Paginator->paginate('Food');
         $this->set(compact('foods'));
          $chi_tiet = $this->Food->find('first', array(
         'conditions' => array('Food.id' => $id)

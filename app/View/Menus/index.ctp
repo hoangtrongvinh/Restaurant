@@ -20,8 +20,12 @@ foreach ($ds_thuc_don as $key => $menu) {
                                 <figure class="img-indent"><img src="/images/thuc_don/<?php echo $menu['Menu']['image'] ?>" alt="" height="125px" width="210px"></figure>
                                 <div class="extra-wrap">
                                     <?php echo $menu['Menu']['content'] ?>
-                                    <h5>Giá <?php echo $this->Number->currency($menu['Menu']['price'], ' VND'); ?> /bàn</h5>
-                                    <input name="txtsl" value="1" style="width:40px;height:35px; text-align:center" type="text"> <a class="button-1" href="#">Mua</a>	    
+                                    <h5 style="margin-bottom: 26px; margin-top: 12px; color: red; font-size: 17px;">Giá <?php echo $this->Number->currency($menu['Menu']['price'], ' VND'); ?> /bàn</h5>
+                                    <?php echo $this->Form->create('Cart',array('class'=>'add-form','url'=>array('controller'=>'carts','action'=>'addmenu')));?>
+                                    <?php echo $this->Form->hidden('menu_id',array('value'=>$menu['Menu']['id']))?>
+                                    <?php echo $this->Form->input('SL',array('value'=>1,'type'=>'number','style'=>'height: 43px; width: 67px;','label'=>false,'div' => false))?>
+                                    <?php echo $this->Form->submit('Mua',array('class'=>'btn-success btn btn-lg','style'=>'display: inline;','div' => false));?>
+                                    <?php echo $this->Form->end();?>	    
                                 </div>
                             </div>
                         </div>
@@ -58,7 +62,7 @@ foreach ($ds_thuc_don as $key => $menu) {
                 <?php foreach ($ds_mon_an as $food) { ?>
                     <li>
                         <img src="/images/hinh_mon_an/<?php echo $food['Food']['image'] ?> " alt="" width="210px" height="125px" align="right" style="float:right;">
-                        <h5 class="prev-indent-bot"><?php echo $food['Food']['name'] ?> </h5>
+                        <h5 style="color: rgb(5, 8, 255); font-size: initial;margin-top: 16px;" class="prev-indent-bot"><?php echo $food['Food']['name'] ?> </h5>
                         <div style="height:87px; overflow:hidden;"><?php
                             echo $this->Text->truncate(
                                     $food['Food']['excerpt'], 80, array(
@@ -94,5 +98,15 @@ foreach ($ds_thuc_don as $key => $menu) {
             moveSlideQty: 1,
             displaySlideQty: 3
         });
-    });
+        $('.add-form').submit(function(e){
+		e.preventDefault();
+		var tis = $(this);
+                alert(tis.attr('action'));
+		$.post(tis.attr('action'),tis.serialize(),function(data){
+			$('#cart-counter').text(data);
+                        $('#msg').html('<div class="alert alert-success flash-msg">Product Added to Shopping Cart</div>');
+			$('.flash-msg').delay(2000).fadeOut('slow');
+		});
+	});
+}); 
 </script>

@@ -22,10 +22,13 @@ $this->start('javascript1');
   <img src="/images/hinh_mon_an/<?php echo  $chi_tiet['Food']['image']?>" alt="" style="margin-right:10px" align="left" height="250px" width="400px">
   <h5><?php echo  $chi_tiet['Food']['excerpt']?></h5>
   <p><?php echo  $chi_tiet['Food']['content']?></p>
-  <p class="p2"><strong class="color-2">Giá: <?php echo $this->Number->currency($chi_tiet['Food']['price'], 'USD'); ?> - Sl:</strong>&nbsp;
-    <input value="1" size="2" type="text">
+  <p class="p2"><strong class="color-2">Giá: <?php echo $this->Number->currency($chi_tiet['Food']['price'], 'USD'); ?> </strong>&nbsp;
   </p>
-  <a class="button-1" href="#">Mua</a>
+                  	<?php echo $this->Form->create('Cart',array('class'=>'add-form','url'=>array('controller'=>'carts','action'=>'add')));?>
+			<?php echo $this->Form->hidden('product_id',array('value'=>$chi_tiet['Food']['id']))?>
+                        <?php echo $this->Form->input('SL',array('value'=>1,'type'=>'number','style'=>'height: 43px; width: 67px;','label'=>false,'div' => false))?>
+			<?php echo $this->Form->submit('Mua',array('class'=>'btn-success btn btn-lg','style'=>'display: inline;','div' => false));?>
+			<?php echo $this->Form->end();?>
   <div style="clear:both"></div>
     
     
@@ -48,7 +51,11 @@ $this->start('javascript1');
                     );
                     ?></p>
                 <p class="p2"><strong class="color-2">Price: <?php echo $this->Number->currency($food['Food']['price'], 'USD'); ?></strong></p>
-                <a class="button-1" href="#">Add to Cart</a>
+                	<?php echo $this->Form->create('Cart',array('class'=>'add-form','url'=>array('controller'=>'carts','action'=>'add')));?>
+			<?php echo $this->Form->hidden('product_id',array('value'=>$food['Food']['id']))?>
+                        <?php echo $this->Form->input('SL',array('value'=>1,'type'=>'number','style'=>'height: 43px; width: 67px;','label'=>false,'div' => false))?>
+			<?php echo $this->Form->submit('Mua',array('class'=>'btn-success btn btn-lg','style'=>'display: inline;','div' => false));?>
+			<?php echo $this->Form->end();?>
             </div>
         </div>
 <?php } 
@@ -63,4 +70,16 @@ $this->start('javascript1');
     <br/>
 
 </div>
-
+<script>
+$(document).ready(function(){
+	$('.add-form').submit(function(e){
+		e.preventDefault();
+		var tis = $(this);
+		$.post(tis.attr('action'),tis.serialize(),function(data){
+			$('#cart-counter').text(data);
+                        $('#msg').html('<div class="alert alert-success flash-msg">Product Added to Shopping Cart</div>');
+			$('.flash-msg').delay(2000).fadeOut('slow');
+		});
+	});
+});
+</script>
