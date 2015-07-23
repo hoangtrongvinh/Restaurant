@@ -56,8 +56,10 @@
                             </ul>
                         </nav>
                     </div>
+                    <span style="display: inline; position: fixed; top: 20px;right: 0; width: 300px;" id="msg"></span>
                 </div>
                 <?php echo $this->fetch('search') ?>
+                
             </div>
             <div class="row-bot">
                 <div class="row-bot-bg">

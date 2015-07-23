@@ -21,7 +21,7 @@ foreach ($ds_thuc_don as $key => $menu) {
                                 <div class="extra-wrap">
                                     <?php echo $menu['Menu']['content'] ?>
                                     <h5 style="margin-bottom: 26px; margin-top: 12px; color: red; font-size: 17px;">Giá <?php echo $this->Number->currency($menu['Menu']['price'], ' VND'); ?> /bàn</h5>
-                                    <?php echo $this->Form->create('Cart',array('class'=>'add-form','url'=>array('controller'=>'carts','action'=>'addmenu')));?>
+                                    <?php echo $this->Form->create('Cart',array('class'=>'add-form','url'=>array('controller'=>'carts','action'=>'addMenu')));?>
                                     <?php echo $this->Form->hidden('menu_id',array('value'=>$menu['Menu']['id']))?>
                                     <?php echo $this->Form->input('SL',array('value'=>1,'type'=>'number','style'=>'height: 43px; width: 67px;','label'=>false,'div' => false))?>
                                     <?php echo $this->Form->submit('Mua',array('class'=>'btn-success btn btn-lg','style'=>'display: inline;','div' => false));?>
@@ -101,7 +101,6 @@ foreach ($ds_thuc_don as $key => $menu) {
         $('.add-form').submit(function(e){
 		e.preventDefault();
 		var tis = $(this);
-                alert(tis.attr('action'));
 		$.post(tis.attr('action'),tis.serialize(),function(data){
 			$('#cart-counter').text(data);
                         $('#msg').html('<div class="alert alert-success flash-msg">Product Added to Shopping Cart</div>');

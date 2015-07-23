@@ -4,7 +4,7 @@ $this->assign('page', 'page1');
 $this->start('slide');
 ?>
 <div class="slider-wrapper">
-    <div class="slider">
+    <div class="slider" style="position: relative; z-index: 1; overflow: hidden;left: -10px;top: -11px;">
         <ul class="items">
             <li>
                 <img src="/images/slider-img1.jpg" alt="" />

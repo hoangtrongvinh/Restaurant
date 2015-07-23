@@ -25,31 +25,27 @@ class Cart extends AppModel {
         $this->saveProduct($allProducts);
     }
 
-    public function addMenu($menuId, $sl) {
-        $this->loadModel('MenuFood');
-        $listFood = $this->MenuFood->find('all', array(
-            'recursive' => -1,
-            'fields' => array('MenuFood.food_id',),
-            'conditions' => array('MenuFood.menu_id' => $menuId)));
-        for ($i = 0; $i < $sl; $i++) {
-            $allProducts = $this->readProduct();
-            foreach ($listFood as $food) {
-                if (null != $allProducts) {
-                    $id=$food[MenuFood][food_id];
-                    if (array_key_exists($id, $allProducts)) 
-                            
-                    {
-                        $allProducts[$food[MenuFood][food_id]] ++;
-                    } else {
-                        $allProducts[$food[MenuFood][food_id]] = 1;
-                    }
+    public function addMenu($listFood,$sl) {
+        for($i=0;$i<$sl;$i++)
+        {
+         $allProducts = $this->readProduct();
+         foreach ($listFood as $food) {
+            if (null != $allProducts) {
+                $id = $food['MenuFood']['food_id'];
+                if (array_key_exists($id, $allProducts)) 
+                {
+                    $allProducts[$id] ++;
                 } else {
-                    $allProducts[$food[MenuFood][food_id]] = 1;
+                    $allProducts[$id] = 1;
                 }
-               $this->saveProduct($allProducts);
+            } else {
+                $allProducts[$id] = 1;
             }
+            $this->saveProduct($allProducts);
+        }
         }
     }
+    
 
     /*
      * get total count of products

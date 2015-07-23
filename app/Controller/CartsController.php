@@ -4,23 +4,26 @@ App::uses('AppController', 'Controller');
 
 class CartsController extends AppController {
 
-    public $uses = array('Food', 'Cart',);
+    public $uses = array('Food', 'Cart', 'MenuFood');
 
     public function add() {
         $this->autoRender = false;
         if ($this->request->is('post')) {
             $this->Cart->addProduct($this->request->data['Cart']['product_id'], $this->request->data['Cart']['SL']);
         }
-        pr($this->request->data);
         echo $this->Cart->getCount();
     }
 
-    public function addmenu() {
+    public function addMenu() {
         $this->autoRender = false;
         if ($this->request->is('post')) {
-            $this->Cart->addMenu($this->request->data['Cart']['menu_id'], $this->request->data['Cart']['SL']);
+            $menuId = $this->request->data['Cart']['menu_id'];
+            $listFood = $this->MenuFood->find('all', array(
+                'recursive' => -1,
+                'fields' => array('MenuFood.food_id',),
+                'conditions' => array('MenuFood.menu_id' => $menuId)));
+            $this->Cart->addMenu($listFood, $this->request->data['Cart']['SL']);
         }
-        
         echo $this->Cart->getCount();
     }
 
@@ -38,7 +41,7 @@ class CartsController extends AppController {
     }
 
     public function update() {
-        
+
         if ($this->request->is('post')) {
             if (!empty($this->request->data)) {
                 $cart = array();

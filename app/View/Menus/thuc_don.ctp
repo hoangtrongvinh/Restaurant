@@ -98,7 +98,6 @@ $this->Html->script('jquery.bxSlider', array('inline' => false));
         	$('.add-form').submit(function(e){
 		e.preventDefault();
 		var tis = $(this);
-                alert(tis.attr('action'));
 		$.post(tis.attr('action'),tis.serialize(),function(data){
 			$('#cart-counter').text(data);
                         $('#msg').html('<div class="alert alert-success flash-msg">Product Added to Shopping Cart</div>');
