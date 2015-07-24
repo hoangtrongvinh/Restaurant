@@ -119,7 +119,7 @@
  * Web path to the public images directory under webroot.
  * If not set defaults to 'img/'
  */
-	//Configure::write('App.imageBaseUrl', 'img/');
+Configure::write('App.imageBaseUrl', 'images/');
 
 /**
  * Web path to the CSS files directory under webroot.
@@ -149,7 +149,7 @@
  *	`manager_index()` and `/manager/controller/index`
  *
  */
-Configure::write('Routing.prefixes', array('admin'));
+//Configure::write('Routing.prefixes', array('admin'));
 
 /**
  * Turn off all caching application-wide.

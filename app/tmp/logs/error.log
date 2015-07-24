@@ -1,0 +1,720 @@
+2015-07-24 08:08:48 Error: Fatal Error (4): syntax error, unexpected '<' in [D:\SourceCode\Github\Restaurant\app\View\Carts\view.ctp, line 31]
+2015-07-24 08:08:48 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /cart.html
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\\SourceCode\\G...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\\SourceCode\\G...', 31, Array)
+#2 D:\SourceCode\Github\Restaurant\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\\SourceCode\\G...', 31, Array)
+#3 D:\SourceCode\Github\Restaurant\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-24 08:11:56 Error: [MissingActionException] Action FoodsController::theo_mua() could not be found.
+Exception Attributes: array (
+  'controller' => 'FoodsController',
+  'action' => 'theo_mua',
+)
+Request URL: /food/theo_mua.html
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(FoodsController), Object(CakeRequest))
+#2 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-07-24 08:12:36 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:27:02 Error: [PrivateActionException] Private Action UsersController::admin_login() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_login',
+)
+Request URL: /users/admin_login/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-07-24 08:27:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:29:44 Error: [PrivateActionException] Private Action UsersController::admin_login() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_login',
+)
+Request URL: /users/admin_login/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-07-24 08:29:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:29:46 Error: [PrivateActionException] Private Action UsersController::admin_login() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_login',
+)
+Request URL: /users/admin_login/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-07-24 08:29:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:29:58 Error: [PrivateActionException] Private Action UsersController::admin_login() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_login',
+)
+Request URL: /users/admin_login/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-07-24 08:29:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:30:26 Error: [PrivateActionException] Private Action UsersController::admin_login() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_login',
+)
+Request URL: /users/admin_login/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-07-24 08:30:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:31:22 Error: [PrivateActionException] Private Action UsersController::admin_login() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_login',
+)
+Request URL: /users/admin_login/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-07-24 08:31:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:32:41 Error: [PrivateActionException] Private Action UsersController::admin_login() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_login',
+)
+Request URL: /users/admin_login/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-07-24 08:32:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:32:42 Error: [PrivateActionException] Private Action UsersController::admin_login() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_login',
+)
+Request URL: /users/admin_login/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-07-24 08:32:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:36:04 Error: [MissingHelperException] Helper class AjaxHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxHelper',
+  'plugin' => false,
+)
+Request URL: /users/admin_login/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(897): HelperCollection->load('Ajax', Array)
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(354): View->loadHelpers()
+#2 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(1247): View->__construct(Object(UsersController))
+#3 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(946): Controller->_getViewObject()
+#4 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-07-24 08:36:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:36:05 Error: [MissingHelperException] Helper class AjaxHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxHelper',
+  'plugin' => false,
+)
+Request URL: /users/admin_login/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(897): HelperCollection->load('Ajax', Array)
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(354): View->loadHelpers()
+#2 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(1247): View->__construct(Object(UsersController))
+#3 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(946): Controller->_getViewObject()
+#4 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-07-24 08:36:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:36:06 Error: [MissingHelperException] Helper class AjaxHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxHelper',
+  'plugin' => false,
+)
+Request URL: /users/admin_login/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(897): HelperCollection->load('Ajax', Array)
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(354): View->loadHelpers()
+#2 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(1247): View->__construct(Object(UsersController))
+#3 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(946): Controller->_getViewObject()
+#4 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-07-24 08:36:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:36:20 Error: [MissingHelperException] Helper class AjaxHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxHelper',
+  'plugin' => false,
+)
+Request URL: /users/admin_login/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(897): HelperCollection->load('Ajax', Array)
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(354): View->loadHelpers()
+#2 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(1247): View->__construct(Object(UsersController))
+#3 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(946): Controller->_getViewObject()
+#4 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-07-24 08:36:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:37:08 Error: [MissingHelperException] Helper class AjaxHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxHelper',
+  'plugin' => false,
+)
+Request URL: /users/admin_login/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(897): HelperCollection->load('Ajax', Array)
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(354): View->loadHelpers()
+#2 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(1247): View->__construct(Object(UsersController))
+#3 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(946): Controller->_getViewObject()
+#4 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-07-24 08:37:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:37:20 Error: [MissingHelperException] Helper class AjaxHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxHelper',
+  'plugin' => false,
+)
+Request URL: /users/admin_login/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(897): HelperCollection->load('Ajax', Array)
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(354): View->loadHelpers()
+#2 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(1247): View->__construct(Object(UsersController))
+#3 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(946): Controller->_getViewObject()
+#4 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-07-24 08:37:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:37:21 Error: [MissingHelperException] Helper class AjaxHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxHelper',
+  'plugin' => false,
+)
+Request URL: /users/admin_login/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(897): HelperCollection->load('Ajax', Array)
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(354): View->loadHelpers()
+#2 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(1247): View->__construct(Object(UsersController))
+#3 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(946): Controller->_getViewObject()
+#4 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-07-24 08:37:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:38:28 Error: [MissingHelperException] Helper class AjaxHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxHelper',
+  'plugin' => false,
+)
+Request URL: /users/admin_login/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(897): HelperCollection->load('Ajax', Array)
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(354): View->loadHelpers()
+#2 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(1247): View->__construct(Object(UsersController))
+#3 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(946): Controller->_getViewObject()
+#4 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-07-24 08:38:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:38:40 Error: [MissingHelperException] Helper class AdminHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AdminHelper',
+  'plugin' => false,
+)
+Request URL: /users/admin_login/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(897): HelperCollection->load('Admin', Array)
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(354): View->loadHelpers()
+#2 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(1247): View->__construct(Object(UsersController))
+#3 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(946): Controller->_getViewObject()
+#4 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-07-24 08:38:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:38:45 Error: [MissingHelperException] Helper class AdminHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AdminHelper',
+  'plugin' => false,
+)
+Request URL: /users/admin_login/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Admin')
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(848): HelperCollection->__isset('Admin')
+#2 D:\SourceCode\Github\Restaurant\app\View\Users\admin_login.ctp(9): View->__get('Admin')
+#3 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(961): include('D:\\SourceCode\\G...')
+#4 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(923): View->_evaluate('D:\\SourceCode\\G...', Array)
+#5 D:\SourceCode\Github\Restaurant\lib\Cake\View\View.php(473): View->_render('D:\\SourceCode\\G...')
+#6 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#7 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-07-24 08:50:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/focus-first-input.js
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:50:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/modified.js
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:51:06 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Role.user_id' in 'on clause'
+Request URL: /users/admin_new/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(3022): DboSource->read(Object(User), Array)
+#5 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(2994): Model->_readDataSource('count', Array)
+#6 D:\SourceCode\Github\Restaurant\app\Controller\UsersController.php(87): Model->find('count', Array)
+#7 [internal function]: UsersController->admin_new()
+#8 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-07-24 08:55:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/modified.js
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:55:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/focus-first-input.js
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:55:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/modified.js
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:55:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/focus-first-input.js
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 08:56:13 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Role.user_id' in 'on clause'
+Request URL: /users/admin_new/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(3022): DboSource->read(Object(User), Array)
+#5 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(2994): Model->_readDataSource('count', Array)
+#6 D:\SourceCode\Github\Restaurant\app\Controller\UsersController.php(87): Model->find('count', Array)
+#7 [internal function]: UsersController->admin_new()
+#8 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-07-24 09:00:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Role.user_id' in 'on clause'
+Request URL: /users/admin_new/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(3022): DboSource->read(Object(User), Array)
+#5 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(2994): Model->_readDataSource('count', Array)
+#6 D:\SourceCode\Github\Restaurant\app\Controller\UsersController.php(87): Model->find('count', Array)
+#7 [internal function]: UsersController->admin_new()
+#8 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-07-24 09:02:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/admin/icons/delete.png
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 09:02:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/modified.js
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 09:02:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/focus-first-input.js
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 09:02:25 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`restaurant`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`))
+Request URL: /users/admin_new/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `re...', Array)
+#2 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `re...')
+#3 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(1928): DboSource->create(Object(User), Array, Array)
+#4 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 D:\SourceCode\Github\Restaurant\app\Controller\UsersController.php(97): Model->save(Array)
+#6 [internal function]: UsersController->admin_new()
+#7 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-07-24 09:03:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/modified.js
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 09:03:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/focus-first-input.js
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 09:03:56 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`restaurant`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`))
+Request URL: /users/admin_new/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `re...', Array)
+#2 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `re...')
+#3 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(1928): DboSource->create(Object(User), Array, Array)
+#4 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 D:\SourceCode\Github\Restaurant\app\Controller\UsersController.php(97): Model->save(Array)
+#6 [internal function]: UsersController->admin_new()
+#7 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-07-24 09:11:32 Error: [MissingTableException] Table roles_users for model RolesUser was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'roles_users',
+  'class' => 'RolesUser',
+  'ds' => 'default',
+)
+Request URL: /users/admin_new/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(3644): Model->setSource('roles_users')
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(891): Model->schema()
+#3 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(919): Model->__isset('RolesUser')
+#4 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(3720): Model->__get('RolesUser')
+#5 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(1779): Model->joinModel('RolesUser', Array)
+#6 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(1257): DboSource->generateAssociationQuery(Object(User), Object(Role), 'hasAndBelongsTo...', 'MemberOf', Array, Array, true)
+#7 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(1137): DboSource->queryAssociation(Object(User), Object(Role), 'hasAndBelongsTo...', 'MemberOf', Array, Array, true, Array, 0, Array)
+#8 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(3022): DboSource->read(Object(User), Array)
+#9 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(2994): Model->_readDataSource('count', Array)
+#10 D:\SourceCode\Github\Restaurant\app\Controller\UsersController.php(87): Model->find('count', Array)
+#11 [internal function]: UsersController->admin_new()
+#12 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-07-24 09:12:59 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Role.user_id' in 'on clause'
+Request URL: /users/admin_new/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(3022): DboSource->read(Object(User), Array)
+#5 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(2994): Model->_readDataSource('count', Array)
+#6 D:\SourceCode\Github\Restaurant\app\Controller\UsersController.php(87): Model->find('count', Array)
+#7 [internal function]: UsersController->admin_new()
+#8 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-07-24 09:13:43 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`restaurant`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`))
+Request URL: /users/admin_new/
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `re...', Array)
+#2 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `re...')
+#3 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(1928): DboSource->create(Object(User), Array, Array)
+#4 D:\SourceCode\Github\Restaurant\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 D:\SourceCode\Github\Restaurant\app\Controller\UsersController.php(97): Model->save(Array)
+#6 [internal function]: UsersController->admin_new()
+#7 D:\SourceCode\Github\Restaurant\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 D:\SourceCode\Github\Restaurant\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-07-24 09:14:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/focus-first-input.js
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 09:14:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/modified.js
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 09:14:50 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/admin/icons/delete.png
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 09:15:51 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/admin/icons/delete.png
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 09:15:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/admin/icons/delete.png
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 09:29:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/modified.js
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-24 09:29:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/focus-first-input.js
+Stack Trace:
+#0 D:\SourceCode\Github\Restaurant\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
